@@ -15,9 +15,12 @@
     	<div id="topo">
         	<div id="logo"></div>
         </div>
-        	
+        
+        <div id="confirma"> 
            <div id="titulo"> <h1>Parabéns!</h1></div>
            <div id="mensagem"><h2>Você fará parte do CONAJE & ENEEJ</h2></div>
+           <a href="http://conajeeneej.com.br/"><button>Voltar ao site</button></a>
+        </div>   
     </div><!-- div all -->     
 </body>
 
