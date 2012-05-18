@@ -27,6 +27,7 @@ body{ margin: 0 auto; padding: 0; background: #F2F2F2;}
 	width: auto;	
 	background: url("../images/bg_header.png") white repeat-x;
 	height: 144px;
+	margin-top:50px;
 }
 
 #top{
