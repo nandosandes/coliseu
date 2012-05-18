@@ -20,6 +20,7 @@ body{ margin: 0 auto; padding: 0; background: #F2F2F2;}
 	width: auto;
 	height: 500px;
 	margin: 0 auto;
+	
 }
  
 
@@ -28,6 +29,7 @@ body{ margin: 0 auto; padding: 0; background: #F2F2F2;}
 	background: url("../images/bg_header.png") white repeat-x;
 	height: 144px;
 	margin-top:50px;
+	float:left;
 }
 
 #top{
