@@ -1,0 +1,53 @@
+
+*{
+	margin:0 auto;
+	padding:0;
+}
+
+
+#content{
+	width:550px;
+	height:650px;
+}
+.prev{
+	float:left;
+	margin-top:415px;
+	margin-left:10px;
+}
+.next{
+	float:left;
+	margin-top:415px;
+
+}
+/* galeria de video*/
+
+#box{
+ width:436px;
+ margin:20px auto;
+ background:black;
+ padding:3px;
+ float:left;
+ height:444px;
+
+ 
+}
+#box #videos{
+ width:450px;
+ height:338px;
+ background:;
+}
+#box #carrosel{
+ height:130px;
+ width:455px;
+ margin-top:12px;
+ margin-left:-3px;
+}
+#box #carrosel img{
+ width:100px;
+ height:90px;
+ margin:2px;
+ padding:2px;
+ border:1px solid #ccc;
+}
+#box #carrosel img:hover{background:#fff;};
+

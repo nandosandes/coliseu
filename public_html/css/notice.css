@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+		margin: 0 auto;	
+	}
+	html{
+		width: 930px;
+		margin: 0 auto;	
+	}
+	body{
+		width: 930px;
+		margin: 0 auto;
+		height: 750px;	 	
+		padding: 0;
+	}
+	
+	#notice {
+		width: 930px;
+		height: auto;
+		margin-top: 20px;	
+		margin-left: 37px;
+	}
+
+	.title{
+		font-family: 'Cutive', cursive;
+		color: white;
+		text-shadow: 1px 2px 1px #004600;
+		font-size: 29px;
+		width: 200px;
+		float :left;
+		margin-left: 20px;
+	}
+	.notice a{
+		text-decoration: none;
+		color: #666;
+	}
+	.notice a:hover{
+		text-decoration: underline;
+	}
+	#list_notices{
+		width: 700px;
+		float: left;	
+		min-height: 900px;
+		margin-top: 10px;
+		margin-left: 20px;
+		margin-bottom: 38px;
+	}
+	.notice{
+		width: 700px;
+		height: 155px;	
+		padding-bottom: 4px;
+		border-bottom: 1px dashed #ccc;
+		margin-top: 22px;
+	}
+	.img_notice{
+		width: 155px;
+		height: 155px;	
+		float: left;
+	}
+	.img_notice img {
+		border: 4px solid #CCC;	
+	}
+	.title_notice{
+		max-width: 700px;
+		height: auto;
+		font-family: 'Cutive',cursive;
+		float: left;
+		margin-right: 10px;
+		font-size: 20px;
+		color: #A2B538;
+		text-shadow: 1px 1px 1px white;
+		margin-top: -3px;
+	}
+	
+.resume_notice {
+    color: #999999;
+    float: left;
+    font-family: 'Cabin Condensed',sans-serif;
+    font-size: 16px;
+    margin-right: 10px;
+    margin-top: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #FFFFFF;
+    width: 400px;
+}
+a.continue_lendo {
+color: #6072A0;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	margin-top: 99px;
+	text-decoration: none;
+	font-family: 'Cabin Condensed';
+	margin-left: 34px;
+}
+	a.continue_lendo:hover{
+		text-decoration: underline;
+	}
+	
+	#acompanhe{
+		width: 320px;
+		float: right;
+		margin-right: 30px;
+		height: 50px;	
+		font-family: 'Shadows Into Light Two', cursive;
+		font-size: 21px;
+		color: #666;
+		text-shadow: 1px 1px 1px #FFF;
+	}
+	
+	#pagination{
+		width: 500px;
+		margin: 0 auto;
+		height: 30px;
+	}
+	
+	#pagination ul{
+		display: inline;	
+	}
+	#pagination ul li{
+		float: left;
+		list-style: none;
+		padding: 2px 6px 2px 6px;
+		font-family: 'Cabin Condensed', sans-serif;
+		background: #CCC;	
+		color: #666;
+		font-size: 20px;
+		margin: 0 12px 0 12px;
+	}
+	#pagination a{
+			text-decoration: none;
+	}
+	#pagination li:hover{
+		background: #31497D;
+		color: white;
+	}
+	#pagination li:active{
+		background: #31497D;
+		color: white;
+	}

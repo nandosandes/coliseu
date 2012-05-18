@@ -1,0 +1,34 @@
+
+twitter a {
+  color: red; }
+code, .example {
+  padding: .5em;
+  display: block;
+  overflow-x: auto;}
+code {
+  margin-left: 1em;}
+code, .code, .example {
+  background-color: white;;
+  color: red;
+  font-size: 85%;
+  font-family: sans-serif; }
+  code a, .code a {
+    color: #fff; }
+.show-code {
+  display: block;
+  font-size: 1%;
+  margin: 1em 0;} */
+.copyright {
+  font-family: verdana, sans-serif;
+  font-size: 50%;
+  margin-top: 8em; }
+  .copyright span {
+    color: #8ADEE2; }
+.download h4 {
+  font-size: 120%;
+  margin-top: -.5em;
+  color: #8ADEE2; }
+.twoot {
+  padding-top: 3em; }
+.query {
+  margin-bottom: 2em; }

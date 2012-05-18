@@ -1,0 +1,108 @@
+@charset "utf-8";
+*{font-family: 'Cabin Condensed', sans-serif;}
+body{ margin: 0 auto; padding: 0; background: #F2F2F2;}
+
+#content {
+	width: auto;
+	height: 500px;
+	margin: 0 auto;
+}
+ 
+
+#header{
+	width: auto;	
+	background: url("../images/bg_header.png") white repeat-x;
+	height: 144px;
+}
+
+#top{
+	width: 930px;
+	margin: -8px auto;	
+	height: 92px;
+}
+
+#top_right{
+	display: inline;
+    float: right;
+    height: 76px;
+    width: 369px;	
+}
+
+#marca {
+	background: url("../images/marca.png") no-repeat;	
+	width: 482px;
+	height: 69px;
+	margin: 9px auto;
+}
+
+#form-login{
+	width: 391px;
+	margin: 0 auto;
+	height: 450px;
+}
+
+
+#lista{
+	width: 930px;
+	margin: 0 auto;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+.title_menu {
+	text-align: center;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 23px;
+	text-shadow: 1px 1px 1px white;
+	color: #0C3461;
+}
+a{
+	text-decoration: none;
+}
+img{border: 0px;}
+
+.title_page{
+	width: 400px;
+	float: left;
+	height: 70px;
+	margin-top: -15px;
+}
+p.title_page{
+	color: #0C3461 ;
+	float: left;
+	font-size: 26px;
+}
+
+
+.title_page{
+	width: 400px;
+	float: left;
+	height: 128px;
+}
+.title_page p{
+	color: #0C3461;
+	font-size: 36px;
+	float: left;
+	margin-left: 10px;
+	text-shadow: 1px 1px 1px #FFF;
+}
+
+#enviar{
+	width: 500px;
+	height: auto;
+	float: left;
+}
+
+#menu_adm{
+	width: 600px;
+	height: 95px;
+	margin: 0 auto;
+	display: table;
+}
+.title_mini{
+	text-align: center;
+	font-size: 17px;
+	margin: 0;
+	padding: 0;
+}
+
+#menu_adm a{text-decoration: none; color: #666;}

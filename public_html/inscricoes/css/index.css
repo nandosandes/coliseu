@@ -1,0 +1,87 @@
+
+*{
+	margin:0 auto;
+	padding:0;
+	font-family: 'Arapey', serif;		
+}
+
+body{
+	background:#2596d9;	
+	
+}
+#all{
+	
+	width:960px;
+	height:1300px;	
+	background:green;
+	background:#f2f2f2;
+}
+
+#topo{
+	width:960px;
+	height:100px;
+	float:left;
+	
+}
+
+#logo{
+
+	width:500px;
+	height:78px;
+	background:url("images/marca_nova.png");
+	margin-top:20px;
+
+}
+	
+#form{
+	
+	width:500px;
+	height:600px;
+	float:left;
+	margin-top:20px;
+	margin-left:50px;	
+	
+}
+
+#titulo{
+	
+	padding-left:50px;	
+	
+}
+#form_inscricao input{
+    font-size:110%;
+	color:gray;
+	
+}
+
+.select{
+
+	font-size:90%;
+	color:gray;	
+	
+}
+#form_inscricao input.error{
+    background: #f8dbdb;
+    border-color: #e77776;
+}
+
+#form_inscricao textarea.error{
+    background: #f8dbdb;
+    border-color: #e77776;
+}
+
+#form_inscricao div span.error{
+    color: #e46c6e;
+}
+
+h1,h2,h3{
+	font-family: 'Arapey', serif;
+	color:#4d4d4d;	
+	
+}
+
+#form_inscricao{
+    font-size:130%;
+	color:#4d4d4d;	
+	
+}
