@@ -2,7 +2,8 @@
 *{
 	margin:0 auto;
 	padding:0;
-	font-family: 'Arapey', serif;		
+	font-family: 'Arapey', serif;	
+		
 }
 
 body{
@@ -12,9 +13,10 @@ body{
 #all{
 	
 	width:960px;
-	height:1300px;	
+	min-height:1300px;	
 	background:green;
 	background:#f2f2f2;
+	overflow: auto;
 }
 
 #topo{
@@ -39,13 +41,13 @@ body{
 	height:600px;
 	float:left;
 	margin-top:20px;
-	margin-left:50px;	
+	margin-left:100px;	
 	
 }
 
 #titulo{
 	
-	padding-left:50px;	
+	padding-left:100px;	
 	
 }
 #form_inscricao input{

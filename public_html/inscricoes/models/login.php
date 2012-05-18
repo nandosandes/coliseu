@@ -29,6 +29,7 @@ class Login {
 	public function logout() {
 		unset($_SESSION['login']);
 		unset($_SESSION['user_id']);
+		unset($_SESSION['user_tipo']);
 		$this->is_logged_in = false;
 	}
 		
@@ -48,7 +49,7 @@ class Login {
 		$query = $database->query($sql);
 		if(mysql_num_rows($query)) {
 			$row = $database->fetch_array($query);
-			$this->login($row['id'],$row['tipo']);
+			$this->login($row['id'],$row['adm']);
 			return true;
 		}
 		return false;	
