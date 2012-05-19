@@ -98,5 +98,13 @@ h1,h2,h3,h4{
     width:700px;
     height:150px;
     margin-top:150px;
+}
 
+button{
+    float:right;
+
+}
+
+a:visited, a:link,a:active{
+    text-decoration:none;
 }
