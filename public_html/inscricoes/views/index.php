@@ -1,3 +1,44 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Inscrições CONAJE|ENEEJ</title>
+  <link   type="text/css" href="../css/index.css" rel="stylesheet" />
+    <link href='http://fonts.googleapis.com/css?family=Arapey' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="../scripts/jquery-1.7.2.min.js"></script>
+  <script type="text/javascript" src="../scripts/jquery.validate.js"></script>
+  <script type="text/javascript" src="../scripts/validacao.js"></script>
+  <script type="text/javascript">
+    function getEndereco() {
+      if($.trim($("#cep").val()) != ""){
+        $.getScript("http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep="+$("#cep").val(),
+        function(){
+          if(resultadoCEP["tipo_logradouro"] != ''){
+            if (resultadoCEP["resultado"]) {
+              $("#rua").val(unescape(resultadoCEP["tipo_logradouro"]) + " " + unescape(resultadoCEP["logradouro"]));
+              $("#bairro").val(unescape(resultadoCEP["bairro"]));
+              $("#cidade").val(unescape(resultadoCEP["cidade"]));
+              $("#estado").val(unescape(resultadoCEP["uf"]));
+              $("#numero").focus();
+            }
+          }
+        });
+      }
+    }
+</script>
+</head>
+<body>
+  <?php // Comentario (Pita): falta colocar a mensagem para aparecer de cada erro que der 
+      // essa mensagem tbm vai para qdo o cadastro for feito e confirmado
+    if(isset($_SESSION['mensagem'])){      
+     echo"chegou aki";
+      unset($_SESSION['mensagem']);
+	
+
+   }
+
+
+ ?>
 
 	<div id="all">
     	<div id="topo">
