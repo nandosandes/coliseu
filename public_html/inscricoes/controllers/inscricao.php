@@ -1,21 +1,18 @@
 <?php
-// comentario add por pita: Falta adicionar a validação de email ja cadastrado
-// para evitar o mesmo email ser cadastrado duas vezes
 
 require_once("../models/inscrito.php");
-
-$name = $_POST['name'];
-$name_cracha = $_POST['name_cracha'];
 
 $email = $_POST['email'];
 $email_confirm = $_POST['email_confirm'];
 
 if(strcmp($email,$email_confirm) != 0){
 	header("Location: ../views/index.php");
+	exit();
 }
 
 if(Inscrito::email_cadastrado($email)){
 	header("Location: ../views/index.php");
+	exit();
 }
 
 $pass = $_POST['pass'];
@@ -23,7 +20,11 @@ $pass_confirm = $_POST['pass_confirm'];
 
 if(strcmp($pass,$pass_confirm) != 0){
 	header("Location: ../views/index.php");
+	exit();
 }
+
+$name = $_POST['name'];
+$name_cracha = $_POST['name_cracha'];
 
 $birth = $_POST['birth'];
 $genero = $_POST['genero'];

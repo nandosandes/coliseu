@@ -13,10 +13,11 @@ body{
 #all{
 	
 	width:960px;
-	min-height:1300px;	
+	min-height:1300px;
 	background:green;
 	background:#f2f2f2;
 	overflow: auto;
+	overflow-x: hidden;
 }
 
 #topo{
@@ -91,20 +92,4 @@ h1,h2,h3,h4{
     font-size:130%;
 	color:#4d4d4d;	
 	
-}
-
-#confirma{
-
-    width:700px;
-    height:150px;
-    margin-top:150px;
-}
-
-button{
-    float:right;
-
-}
-
-a:visited, a:link,a:active{
-    text-decoration:none;
 }

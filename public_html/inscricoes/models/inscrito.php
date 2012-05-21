@@ -5,7 +5,7 @@ include("database.php");
 class Inscrito {
 
 	private static $db_fields = array(
-		'name','name_cracha','email','pass','birth','genero','tshirt','country','cpf','passport','estado','cidade','phone','type','empresa','cargo','segmento','federacao','ej','cargo_jr','tempo','date','confirm','cep','bairro','rua','numero','complemento','celular','codigo','adm'
+		'name','name_cracha','email','pass','birth','genero','tshirt','country','cpf','passport','estado','cidade','phone','type','empresa','cargo','segmento','federacao','ej','cargo_jr','tempo','date','confirm','cep','bairro','rua','numero','complemento','celular','codigo'
 	);
 	
 	private static $date;
@@ -39,7 +39,6 @@ class Inscrito {
 	public $complemento;
 	public $celular;
 	public $codigo;
-	public $adm;
 	public static $table_name = "inscricoes_inscritos";
 	
 

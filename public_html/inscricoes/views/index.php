@@ -1,45 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-	
+
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Inscrições CONAJE|ENEEJ</title>
-  <link   type="text/css" href="../css/index.css" rel="stylesheet" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Inscrições CONAJE|ENEEJ</title>
+	<link   type="text/css" href="../css/index.css" rel="stylesheet" />
     <link href='http://fonts.googleapis.com/css?family=Arapey' rel='stylesheet' type='text/css'>
-  <script type="text/javascript" src="../scripts/jquery-1.7.2.min.js"></script>
-  <script type="text/javascript" src="../scripts/jquery.validate.js"></script>
-  <script type="text/javascript" src="../scripts/validacao.js"></script>
-  <script type="text/javascript">
-    function getEndereco() {
-      if($.trim($("#cep").val()) != ""){
-        $.getScript("http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep="+$("#cep").val(),
-        function(){
-          if(resultadoCEP["tipo_logradouro"] != ''){
-            if (resultadoCEP["resultado"]) {
-              $("#rua").val(unescape(resultadoCEP["tipo_logradouro"]) + " " + unescape(resultadoCEP["logradouro"]));
-              $("#bairro").val(unescape(resultadoCEP["bairro"]));
-              $("#cidade").val(unescape(resultadoCEP["cidade"]));
-              $("#estado").val(unescape(resultadoCEP["uf"]));
-              $("#numero").focus();
-            }
-          }
-        });
-      }
-    }
-</script>
+	<script type="text/javascript" src="../scripts/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="../scripts/jquery.validate.js"></script>
+	<script type="text/javascript" src="../scripts/validacao.js"></script>
+	<script type="text/javascript">
+		function getEndereco() {
+			if($.trim($("#cep").val()) != ""){
+				$.getScript("http://cep.republicavirtual.com.br/web_cep.php?formato=javascript&cep="+$("#cep").val(),
+				function(){
+					if(resultadoCEP["tipo_logradouro"] != ''){
+						if (resultadoCEP["resultado"]) {
+							$("#rua").val(unescape(resultadoCEP["tipo_logradouro"]) + " " + unescape(resultadoCEP["logradouro"]));
+							$("#bairro").val(unescape(resultadoCEP["bairro"]));
+							$("#cidade").val(unescape(resultadoCEP["cidade"]));
+							$("#estado").val(unescape(resultadoCEP["uf"]));
+							$("#numero").focus();
+						}
+					}
+				});
+			}
+		}
+	</script>
 </head>
+
 <body>
-  <?php // Comentario (Pita): falta colocar a mensagem para aparecer de cada erro que der 
-      // essa mensagem tbm vai para qdo o cadastro for feito e confirmado
-    if(isset($_SESSION['mensagem'])){      
-     echo"chegou aki";
-      unset($_SESSION['mensagem']);
-	
-
-   }
-
-
- ?>
-
+	<?php // Comentario (Pita): falta colocar a mensagem para aparecer de cada erro que der 
+			// essa mensagem tbm vai para qdo o cadastro for feito e confirmado
+		if(isset($_SESSION['mensagem'])){			
+			echo"chegou aki";
+			unset($_SESSION['mensagem']);
+		}
+	?>
 	<div id="all">
     	<div id="topo">
         	<div id="logo"></div>
@@ -66,7 +63,7 @@
                 <input type="password" name="pass_confirm" id="pass_confirm"/></br>
                 
                 <label for="birth">Data de nascimento </label></br>
-                <input type="text" name="birth" id="birth"/></br></br>
+                <input type="text" name="birth" id="birth" onkeydown="Mascara(this,Data);" onkeypress="Mascara(this,Data);" onkeyup="Mascara(this,Data);"/></br></br>
                 
                 Gênero: &nbsp;&nbsp;
                 <input type="radio" name="genero" value="feminino" id="f"/><label for="f">&nbsp;Feminino</label>
@@ -83,11 +80,11 @@
                 </br>
                 
                 <label for="phone">Telefone </label></br>
-                <input type="text" name="phone" id="phone"/>
+                <input type="text" name="phone" id="phone" onkeydown="Mascara(this,Telefone);" onkeypress="Mascara(this,Telefone);" onkeyup="Mascara(this,Telefone);"/>
                 </br>
                 
                 <label for="cel_phone">Celular </label></br>
-                <input type="text" name="cel_phone" id="cel_phone"/>
+                <input type="text" name="cel_phone" id="cel_phone" onkeydown="Mascara(this,Telefone);" onkeypress="Mascara(this,Telefone);" onkeyup="Mascara(this,Telefone);"/>
                 </br>
                 
                 <label for="country">País </label></br>
@@ -102,10 +99,10 @@
                     
                 <div id="bloco_brasil">
                     <label for="cpf">CPF </label></br>
-                    <input type="text" name="cpf" id="cpf"/>
+                    <input type="text" name="cpf" id="cpf" onkeydown="Mascara(this,Cpf);" onkeypress="Mascara(this,Cpf);" onkeyup="Mascara(this,Cpf);"/>
                     </br>
                     <label for="cep">CEP</label></br>
-                    <input type="text" name="cep" id="cep" class="inputs" onblur="getEndereco()"/>
+                    <input type="text" name="cep" id="cep" class="inputs" onblur="getEndereco()" onkeydown="Mascara(this,Cep);" onkeypress="Mascara(this,Cep);" onkeyup="Mascara(this,Cep);"/>
                     </br>
                     <label for="estado">Estado</label></br>
                     <input type="text" name="estado" id="estado"/>
